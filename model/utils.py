@@ -5,7 +5,7 @@ import yaml
 class ModelConfig():
     def __init__(self, config_path):
         with open(config_path) as file:
-            config_dict = yaml.load(file, Loader=yaml.FullLoader)
+            config_dict = yaml.load(file)
         self.__dict__ = config_dict
 
 
